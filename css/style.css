@@ -1,0 +1,46 @@
+@charset "utf-8";
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* 表⽰領域のスタイル */
+.display-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+/* ポスターのコンテナ */
+.poster {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: calc(20% - 20px); /* 初期の横幅設定 */
+}
+/* ポスターの画像 */
+.poster img {
+  width: 100%;
+  height: auto;
+}
+/* ナビゲーションボタンのスタイル */
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  background-color: #fff;
+  z-index: 999; /* 他の要素の上に表⽰するための z-index */
+}
+
+/* 前後のナビゲーションボタン */
+.navigation button {
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+}
